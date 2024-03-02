@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             {
                 for(int j = 0;j < sizeY; j++)
                 {
-                    kernel[i , j] = 1.0f / 9f;
+                    kernel[i , j] = 1.0f / (float)(sizeX * sizeY);
                 }
             }
         }
