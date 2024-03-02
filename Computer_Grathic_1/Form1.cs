@@ -29,6 +29,7 @@ namespace Computer_Grathic_1
             }
             pictureBox1.Image = image;
             pictureBox1.Refresh();
+           
         }
 
         private void инверсияToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,6 +38,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void увеличениеЯркостиНаКонстантуToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +47,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void бинаризацияПоПорогоуToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,6 +56,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void конвертацияВОттенкиСерогоToolStripMenuItem_Click(object sender, EventArgs e)
@@ -61,6 +65,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void размытиеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,6 +74,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void гаусToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,6 +83,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
 
@@ -86,6 +93,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void сверткаToolStripMenuItem_Click(object sender, EventArgs e)
@@ -94,6 +102,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void резкостьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -102,6 +111,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
         private void переносToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -109,6 +119,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void поворотToolStripMenuItem_Click(object sender, EventArgs e)
@@ -117,6 +128,7 @@ namespace Computer_Grathic_1
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
+            image = resultImage;
         }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
