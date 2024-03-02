@@ -63,7 +63,10 @@
     <Compile Include="MatrixFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharpnessFilter.cs" />
     <Compile Include="SvertkaFilter.cs" />
+    <Compile Include="TransferFilter.cs" />
+    <Compile Include="TurnFilter.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

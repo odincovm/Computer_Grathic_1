@@ -95,5 +95,56 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
         }
+
+        private void резкостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharpnessFilter();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+        }
+        private void переносToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new TransferFilter();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+        }
+
+        private void поворотToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new TurnFilter();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (pictureBox1.Image != null)
+            {
+
+                SaveFileDialog savedialog = new SaveFileDialog();
+                savedialog.Title = "Сохранить картинку как...";
+                savedialog.OverwritePrompt = true;
+                savedialog.CheckPathExists = true;
+                savedialog.Filter = "Image Files(*.BMP)|*.BMP|Image Files(*.JPG)|*.JPG|Image Files(*.GIF)|*.GIF|Image Files(*.PNG)|*.PNG|All files (*.*)|*.*";
+                savedialog.ShowHelp = true;
+                if (savedialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        image.Save(savedialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Невозможно сохранить изображение", "Ошибка",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
     }
 }
+    

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    internal class GaussianFilter : MatrixFilter
+    class GaussianFilter : MatrixFilter
     {
         public void createGaussianKernel(int radius, float sigma)
         {
