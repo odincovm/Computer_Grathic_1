@@ -13,6 +13,8 @@ namespace Computer_Grathic_1
 {
     public partial class Form1 : Form
     {
+        Bitmap[] memory = new Bitmap[3];
+        int ind = 2;
         Bitmap image;
         public Form1()
         {
@@ -28,6 +30,8 @@ namespace Computer_Grathic_1
                 image = new Bitmap(dialog.FileName);
             }
             pictureBox1.Image = image;
+            memory[ind] = image;
+            ind--;
             pictureBox1.Refresh();
            
         }
@@ -39,6 +43,9 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void увеличениеЯркостиНаКонстантуToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,6 +55,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void бинаризацияПоПорогоуToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,6 +70,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void конвертацияВОттенкиСерогоToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,6 +85,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void размытиеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,6 +100,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void гаусToolStripMenuItem_Click(object sender, EventArgs e)
@@ -84,6 +115,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
 
@@ -94,6 +131,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void сверткаToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,6 +146,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void резкостьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -112,6 +161,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
         private void переносToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -120,6 +175,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void поворотToolStripMenuItem_Click(object sender, EventArgs e)
@@ -129,6 +190,12 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -155,6 +222,27 @@ namespace Computer_Grathic_1
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+            }
+        }
+
+        private void наОдинШагToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (memory[1] != null)
+            {
+                pictureBox1.Image = memory[1];
+                memory[2] = memory[1];
+                memory[0] = null;
+            }
+        }
+
+        private void на2ШагаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (memory[0] != null)
+            {
+                pictureBox1.Image = memory[0];
+                memory[2] = memory[0];
+                memory[1] = null;
+                memory[0] = null;
             }
         }
     }
