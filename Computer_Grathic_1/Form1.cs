@@ -21,6 +21,8 @@ namespace Computer_Grathic_1
             InitializeComponent();
         }
 
+       
+
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -244,6 +246,141 @@ namespace Computer_Grathic_1
                 memory[1] = null;
                 memory[0] = null;
             }
+        }
+
+        private void поYToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharraY();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void поXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharraX();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void поYToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SobelY();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void поXToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SobelX();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void поYToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Filters filter = new PruittY();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void поXToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Filters filter = new PruittX();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void вариант1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new waves1();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void вариант2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new waves2();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void вToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Crowding();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
     }
 }
