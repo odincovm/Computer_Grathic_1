@@ -16,9 +16,11 @@ namespace Computer_Grathic_1
         Bitmap[] memory = new Bitmap[3];
         int ind = 2;
         Bitmap image;
+        public int[,] Mask;
         public Form1()
         {
             InitializeComponent();
+            Mask = new int[3, 3] { { 0, 1, 0 }, { 1, 1, 1 }, { 0, 1, 0 } };
         }
 
        
@@ -370,7 +372,29 @@ namespace Computer_Grathic_1
 
         private void вToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filters filter = new Crowding();
+            InvertFiltersGrey filter = new InvertFiltersGrey();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            Filters filter1 = new Crowding();
+            Bitmap resultImage1 = filter.processImage(image);
+            pictureBox1.Image = resultImage1;
+            pictureBox1.Refresh();
+            image = resultImage1;
+            pictureBox1.Image = resultImage1;
+            pictureBox1.Refresh();
+            image = resultImage1;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void motionBlureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Motionblur();
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
@@ -378,6 +402,115 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void медианныйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void стеклаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Glass();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void расширениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Dilation(Mask);
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+         
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void сужениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Errosion(Mask);
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void открытиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            Filters filter1 = new Errosion(Mask);
+            Bitmap resultImage1 = filter1.processImage(image);
+            Filters filter2 = new Dilation(Mask);
+            Bitmap resultImage2 = filter2.processImage(resultImage1);
+            pictureBox1.Image = resultImage2;
+            pictureBox1.Refresh();
+            image = resultImage2;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void задатьСтруктурныйЭлементToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void закрытиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter2 = new Errosion(Mask);
+            Filters filter1 = new Dilation(Mask);
+            Bitmap resultImage1 = filter1.processImage(image);
+            Bitmap resultImage2 = filter2.processImage(resultImage1);
+            pictureBox1.Image = resultImage2;
+            pictureBox1.Refresh();
+            image = resultImage2;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+  
+        private void градиентToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Grad filter = new Grad(Mask);
+            Bitmap resultImage = filter.ProcessImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void серыйМирToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GrayWorld filter = new GrayWorld();
+            Bitmap resultImage = filter.processimage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
