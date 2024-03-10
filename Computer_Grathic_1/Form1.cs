@@ -473,7 +473,14 @@ namespace Computer_Grathic_1
 
         private void задатьСтруктурныйЭлементToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Mask[i, j]= (int)(textBox2.Text[i+j]-'0');
+                }
+            }
+       
         }
 
         private void закрытиеToolStripMenuItem_Click(object sender, EventArgs e)
