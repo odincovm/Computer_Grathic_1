@@ -59,9 +59,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -74,9 +72,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -89,9 +85,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -104,9 +98,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -119,9 +111,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+           
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -135,9 +125,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+           
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -150,9 +138,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -165,9 +151,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -179,9 +163,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -194,9 +176,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -257,9 +237,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+         
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -272,9 +250,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -287,9 +263,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -302,9 +276,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+           
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -317,9 +289,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+          
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -332,9 +302,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+        
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -347,9 +315,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+           
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -362,9 +328,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
-            pictureBox1.Refresh();
-            image = resultImage;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -384,9 +348,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage1;
             pictureBox1.Refresh();
             image = resultImage1;
-            pictureBox1.Image = resultImage1;
-            pictureBox1.Refresh();
-            image = resultImage1;
+            
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -513,6 +475,58 @@ namespace Computer_Grathic_1
         private void серыйМирToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GrayWorld filter = new GrayWorld();
+            Bitmap resultImage = filter.processimage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void идеальныйОтражательToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PerfectReflector filter = new PerfectReflector();
+            Bitmap resultImage = filter.processimage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void корекцияСОпорнымЦветомToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CorrectionWithReferenceColor filter = new CorrectionWithReferenceColor(Color.FromName("Green"));
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void topHatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TopHat filter = new TopHat();
+            Bitmap resultImage = filter.processimage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+        }
+
+        private void blackHatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BlackHat filter = new BlackHat();
             Bitmap resultImage = filter.processimage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
