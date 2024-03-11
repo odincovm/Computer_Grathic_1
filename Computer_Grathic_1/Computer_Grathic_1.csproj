@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="GaussianFilter.cs" />
     <Compile Include="Glass.cs" />
+    <Compile Include="Glowingedges.cs" />
     <Compile Include="Grad.cs" />
     <Compile Include="GrayWorld.cs" />
     <Compile Include="InvertFilter.cs" />

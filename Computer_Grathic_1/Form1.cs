@@ -371,7 +371,17 @@ namespace Computer_Grathic_1
 
         private void медианныйToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            Filters filter = new MedianFilter();
+            Bitmap resultImage = filter.processImage(image);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
         }
 
         private void стеклаToolStripMenuItem_Click(object sender, EventArgs e)
@@ -535,6 +545,24 @@ namespace Computer_Grathic_1
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
+        }
+
+        private void светящиесяКраяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MedianFilter();
+            Bitmap resultImage = filter.processImage(image);
+            Filters filter2 = new SobelY();
+            resultImage = filter2.processImage(resultImage);
+            Filters filter3 = new Glowingedges();
+            resultImage = filter3.processImage(resultImage);
+            pictureBox1.Image = resultImage;
+            pictureBox1.Refresh();
+            image = resultImage;
+            pictureBox1.Image = resultImage;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
+
         }
     }
 }
