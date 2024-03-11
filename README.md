@@ -59,9 +59,9 @@ opening (Миша)
 
 closing (Миша)
 
- top hat
+ top hat (Миша)
  
- black hat
+ black hat (Миша)
  
  grad (Миша)
 
