@@ -12,14 +12,13 @@ namespace Computer_Grathic_1
     {
         protected override Color calculateNewPixelColor(Bitmap sourceImage, int i, int j)
         {
-            if (i - 50 < 0) {
-                Color sourseColor = sourceImage.GetPixel(0, j);
-                Color resultColor = Color.FromArgb(sourseColor.R, sourseColor.G, sourseColor.B);
+            if (i + 50 >= sourceImage.Width) {
+                Color resultColor = Color.FromArgb(0, 0, 0);
                 return resultColor;
             }
             else
             {
-                Color sourseColor = sourceImage.GetPixel(i-50, j);
+                Color sourseColor = sourceImage.GetPixel(i+50, j);
                 Color resultColor = Color.FromArgb(sourseColor.R, sourseColor.G, sourseColor.B);
                 return resultColor;
             }

@@ -21,7 +21,7 @@ namespace Computer_Grathic_1
                 {
                    if (i== j)
                     {
-                        kernel[i, j] = 1.0f/3f;
+                        kernel[i, j] = 1.0f/5f;
                     }
                     else
                     {

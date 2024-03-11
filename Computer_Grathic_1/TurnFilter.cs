@@ -12,9 +12,9 @@ namespace Computer_Grathic_1
     {
         protected override Color calculateNewPixelColor(Bitmap sourceImage, int i, int j)
         {
-            int  x = (int)((i - 125) * Math.Cos(0.3) - (j - 125) * Math.Sin(0.3) + 125);
-            int y = (int)((i - 125) * Math.Sin(0.3) - (j - 125) * Math.Cos(0.3) + 125);
-            if ((x<0)||(y<0))
+            int  x = (int)((i - 150) * Math.Cos(0.2) - (j - 255) * Math.Sin(0.2) + 150);
+            int y = (int)((i - 150) * Math.Sin(0.2) + (j - 255) * Math.Cos(0.2) + 150);
+            if ((x<0)||(y<0)||(x>=sourceImage.Width))
             {
               
                 Color resultColor = Color.FromArgb(255, 255, 255);

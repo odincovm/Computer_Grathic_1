@@ -34,8 +34,9 @@ namespace Computer_Grathic_1
                 image = new Bitmap(dialog.FileName);
             }
             pictureBox1.Image = image;
-            memory[ind] = image;
-            ind--;
+            memory[0] = memory[1];
+            memory[1] = memory[2];
+            memory[2] = image;
             pictureBox1.Refresh();
            
         }
@@ -502,7 +503,7 @@ namespace Computer_Grathic_1
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();
             image = resultImage;
-            pictureBox1.Image = resultImage;
+        
             memory[0] = memory[1];
             memory[1] = memory[2];
             memory[2] = image;
@@ -510,7 +511,12 @@ namespace Computer_Grathic_1
 
         private void корекцияСОпорнымЦветомToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CorrectionWithReferenceColor filter = new CorrectionWithReferenceColor(Color.FromName("Green"));
+            Form1 F1 = new Form1();
+            Color r;
+            if (F1.colorDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                r = F1.colorDialog1.Color;
+            else return;
+            CorrectionWithReferenceColor filter = new CorrectionWithReferenceColor(r);
             Bitmap resultImage = filter.processImage(image);
             pictureBox1.Image = resultImage;
             pictureBox1.Refresh();

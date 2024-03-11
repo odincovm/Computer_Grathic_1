@@ -12,22 +12,11 @@ namespace Computer_Grathic_1
     {
         protected override Color calculateNewPixelColor(Bitmap sourceImage, int i, int j)
         {
-            int x = (int)((i + 20 * Math.Sin(2 * Math.PI * i / 30)));
+            int x = Clamp((int)((i + 20 * Math.Sin(2 * Math.PI * i / 30))), 0, sourceImage.Width-1);
             int y = j;
-
-            if ((x < 0) || (x > sourceImage.Width - 1))
-            {
-                x = sourceImage.Width - 1;
-                Color sourseColor = sourceImage.GetPixel(x, y);
-                Color resultColor = Color.FromArgb(sourseColor.R, sourseColor.G, sourseColor.B);
-                return resultColor;
-            }
-            else
-            {
-                Color sourseColor = sourceImage.GetPixel(x, y);
-                Color resultColor = Color.FromArgb(sourseColor.R, sourseColor.G, sourseColor.B);
-                return resultColor;
-            }
+            Color sourseColor = sourceImage.GetPixel(x, y);
+            Color resultColor = Color.FromArgb(sourseColor.R, sourseColor.G, sourseColor.B);
+            return resultColor;
         }
     }
 }
